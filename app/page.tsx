@@ -14,7 +14,6 @@ export default function LoginPage() {
     if (!policy) { alert('Enter policy number'); setLoading(false); return }
     const { data, error } = await supabase.from('policies').select('*').eq('policy_number', policy.trim()).single()
     if (error || !data) { alert('Policy not found: ' + policy + ' - Try POL-MUN-4401'); setLoading(false); return }
-    // Simple demo password check - 1234
     if (password !== '1234' && password !== '') { alert('Wrong password - Use 1234 for demo'); setLoading(false); return }
     localStorage.setItem('policy', data.policy_number)
     localStorage.setItem('entity', data.entity_name)
@@ -33,7 +32,7 @@ export default function LoginPage() {
         </div>
         
         <h1 className="font-bold text-lg">Client Login</h1>
-        <p className="text-xs text-gray-500 mb-4">Enter Policy Number + Password 1234</p>
+        <p className="text-xs text-gray-500 mb-4">Enter Policy Number + Password 1234 (Demo)</p>
         
         <div className="space-y-3">
           <input value={policy} onChange={e=>setPolicy(e.target.value)} placeholder="Policy Number e.g. POL-MUN-4401" className="w-full p-3 border rounded-xl text-sm" />
@@ -51,9 +50,20 @@ export default function LoginPage() {
             </button>
           </div>
 
-          <div className="pt-4 border-t mt-4">
+          <div className="pt-4 border-t mt-4 space-y-2">
+            <a href="/download" className="block w-full h-10 bg-[#0E7A7B] text-white rounded-xl text-sm flex items-center justify-center font-bold">⬇️ Download App to Phone</a>
             <a href="/broker" className="block w-full h-10 bg-gray-900 text-white rounded-xl text-sm flex items-center justify-center">Broker Admin Login →</a>
-            <div className="text-[10px] text-gray-400 mt-2 text-center">50 Constantia Blvd, Roodepoort • 082 539 6224</div>
+            
+            <div className="flex justify-center gap-3 mt-4 text-[10px]">
+              <a href="/privacy" className="underline text-gray-500">POPIA Privacy</a>
+              <a href="/fais" className="underline text-gray-500">FAIS Disclosure</a>
+              <a href="/terms" className="underline text-gray-500">Terms (Demo)</a>
+            </div>
+
+            <div className="text-[10px] text-gray-400 mt-2 text-center">
+              50 Constantia Blvd, Roodepoort • 082 539 6224<br/>
+              Demo mode • Storage: Supabase EU Frankfurt • claim-docs PUBLIC (demo)
+            </div>
           </div>
         </div>
       </div>
