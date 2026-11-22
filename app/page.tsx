@@ -28,7 +28,7 @@ export default function LoginPage() {
           <img src="/logo.png" alt="logo" className="h-10 w-auto" />
           <div>
             <div className="font-bold">Mpumelelo Services</div>
-            <div className="text-xs text-gray-500">Since 2006 • 100% Black Owned</div>
+            <div className="text-xs text-gray-500">Since 2006</div>
           </div>
         </div>
         
