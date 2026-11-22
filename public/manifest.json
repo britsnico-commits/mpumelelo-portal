@@ -1,0 +1,21 @@
+{
+  "name": "Mpumelelo Services - Insurance Portal",
+  "short_name": "Mpumelelo",
+  "description": "Broker & Client Portal - Roadside, Claims, Policy - 100% Black Owned Since 2006",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#F8FAFB",
+  "theme_color": "#0E7A7B",
+  "icons": [
+    {
+      "src": "/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
