@@ -1,4 +1,3 @@
-
 import './globals.css'
 export const metadata = { title: 'Mpumelelo Services - Insurance Portal', description: 'Broker & Client Portal - 100% Black Owned Since 2006' }
 export default function RootLayout({ children }: { children: React.ReactNode }) {
