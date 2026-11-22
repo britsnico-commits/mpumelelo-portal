@@ -32,7 +32,7 @@ export default function DownloadPage() {
         <div className="flex flex-col items-center">
           <img src="/logo.png" alt="logo" className="h-16 w-auto" />
           <h1 className="font-bold text-xl mt-4">Mpumelelo Services</h1>
-          <p className="text-xs text-gray-500">Since 2006 • 100% Black Owned • Insurance Broker Portal</p>
+          <p className="text-xs text-gray-500">Since 2006 • Insurance Broker Portal</p>
         </div>
 
         <div className="mt-8 bg-gray-900 text-white rounded-2xl p-6 text-center">
