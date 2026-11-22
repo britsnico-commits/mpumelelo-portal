@@ -1,6 +1,10 @@
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-body { font-family: Inter, system-ui, -apple-system, sans-serif; -webkit-font-smoothing: antialiased; }
-button { cursor: pointer; }
+
+body {
+  font-family: Inter, system-ui, -apple-system, sans-serif;
+  background: #F8FAFB;
+  color: #0F2B3C;
+  -webkit-font-smoothing: antialiased;
+}
