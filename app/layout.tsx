@@ -1,10 +1,12 @@
 import './globals.css'
-export const metadata = { 
+
+export const metadata = {
   title: 'Mpumelelo Services - Insurance Portal',
   description: 'Broker & Client Portal - Roadside, Claims, Policy - Since 2006',
   manifest: '/manifest.json',
   themeColor: '#0E7A7B'
 }
+
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
@@ -20,6 +22,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           <div className="ml-auto text-[10px] text-gray-400">Since 2006</div>
         </div>
         {children}
+        <script dangerouslySetInnerHTML={{__html: `if('serviceWorker' in navigator){window.addEventListener('load',()=>{navigator.serviceWorker.register('/sw.js')})}`}} />
       </body>
     </html>
   )
