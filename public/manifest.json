@@ -1,10 +1,10 @@
 {
-  "name": "Mpumelelo Services - Insurance Portal",
+  "name": "Mpumelelo Services",
   "short_name": "Mpumelelo",
-  "description": "Broker & Client Portal - Roadside, Claims, Policy - Since 2006",
+  "description": "Insurance Broker Portal - Since 2006",
   "start_url": "/",
   "display": "standalone",
-  "background_color": "#F8FAFB",
+  "background_color": "#0E7A7B",
   "theme_color": "#0E7A7B",
   "icons": [
     {
